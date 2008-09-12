@@ -8,7 +8,6 @@ use lib 'lib';
 use Test::More tests => 19;
 use Test::NoWarnings;
 
-use Data::Dumper;
 use Test::Exception;
 use Test::UniqueTestNames::Test;
 

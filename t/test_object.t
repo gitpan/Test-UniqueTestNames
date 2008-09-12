@@ -8,7 +8,6 @@ use lib 'lib';
 use Test::More tests => 37;
 use Test::NoWarnings;
 
-use Data::Dumper;
 use Test::Exception;
 
 my $CLASS = 'Test::UniqueTestNames::Test';

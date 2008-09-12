@@ -6,7 +6,7 @@ use warnings;
 use Test::More tests => 1;
 use Test::NoWarnings qw//;
 
-use Sub::Uplevel;
+use Test::Exception;
 use Hook::LexWrap;
 
 TODO: {

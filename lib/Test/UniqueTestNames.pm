@@ -6,7 +6,7 @@ Test::UniqueTestNames - Make sure all of your tests have unique names
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =head1 SYNOPSIS
 
@@ -65,7 +65,7 @@ use vars qw(
     @non_unique_tests
 );
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 #require Exporter;
 #@ISA = qw( Exporter );

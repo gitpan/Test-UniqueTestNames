@@ -3,8 +3,6 @@ package Test::UniqueTestNames::Test;
 use strict;
 use warnings;
 
-use Data::Dumper;
-
 my $unnamed_ok = 0;
 
 sub new {

@@ -3,8 +3,6 @@ package Test::UniqueTestNames::Tracker;
 use strict;
 use warnings;
 
-use Data::Dumper;
-
 use Test::UniqueTestNames::Test;
 
 my %tests;

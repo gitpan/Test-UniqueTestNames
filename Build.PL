@@ -8,9 +8,12 @@ my $builder = Module::Build->new(
     dist_author         => 'Josh Heumann <cpan@joshheumann.com>',
     dist_version_from   => 'lib/Test/UniqueTestNames.pm',
     build_requires => {
-        'Test::More' => 0,
+        'Hook::LexWrap'    => 0,
+        'Test::Builder'    => 0,
+        'Test::More'       => 0,
+        'Test::NoWarnings' => 0,
     },
-    add_to_cleanup      => [ 'Test-UniqueTestNames-*' ],
+    add_to_cleanup     => [ 'Test-UniqueTestNames-*' ],
     create_makefile_pl => 'traditional',
 );
 
