@@ -9,6 +9,7 @@ WriteMakefile
           'VERSION_FROM' => 'lib/Test/UniqueTestNames.pm',
           'PREREQ_PM' => {
                            'Test::More' => 0,
+                           'Test::Exception' => 0,
                            'Test::Builder' => 0,
                            'Test::NoWarnings' => 0,
                            'Hook::LexWrap' => 0

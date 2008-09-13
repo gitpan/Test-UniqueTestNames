@@ -10,6 +10,7 @@ my $builder = Module::Build->new(
     build_requires => {
         'Hook::LexWrap'    => 0,
         'Test::Builder'    => 0,
+        'Test::Exception'  => 0,
         'Test::More'       => 0,
         'Test::NoWarnings' => 0,
     },
