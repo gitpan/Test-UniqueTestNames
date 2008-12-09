@@ -60,7 +60,7 @@ use Hook::LexWrap;
 my $CLASS = __PACKAGE__;
 
 use vars qw(
-	@EXPORT_OK @ISA $VERSION
+    @EXPORT_OK @ISA $VERSION
     $do_end_test
     @non_unique_tests
 );
@@ -78,7 +78,7 @@ $VERSION = '0.04';
 $do_end_test = 0;
 
 sub import {
-	$do_end_test = 1;
+    $do_end_test = 1;
     Test::UniqueTestNames::Tracker->unnamed_ok(1) if grep { $_ eq 'unnamed_ok' } @_;
 
     goto &Exporter::import;
@@ -114,7 +114,7 @@ sub had_unique_test_names {
 
     my $builder = $CLASS->builder;
 
-	my ( $ok, $diag );
+    my ( $ok, $diag );
     if( @{ Test::UniqueTestNames::Tracker->failing_tests } > 0 ) {
         $ok = 0;
 
@@ -153,7 +153,7 @@ sub had_unique_test_names {
     # TODO this should be exportable so that we don't have to set the line number manually,
     #  but use_ok seems to be interferring.
     #$test_line_number = __LINE__ + 1;
-	$builder->ok($ok, 'all test names unique') || $builder->diag($diag);
+    $builder->ok($ok, 'all test names unique') || $builder->diag($diag);
 }
 
 1;
